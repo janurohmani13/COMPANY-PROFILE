@@ -12,12 +12,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Add custom styles to ensure consistent appearance */
+        .container {
+            max-width: 1200px; /* Limit max width for larger screens */
+            margin: 0 auto; /* Center the container */
+        }
+        .intro {
+            display: block; /* Ensure block display for stacking */
+        }
+        .intro-img {
+            width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        @media (max-width: 768px) {
+            .intro {
+                margin-bottom: 20px; /* Space below on mobile */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">rahma course online</a>
+            <a class="navbar-brand text-uppercase fw-bold" href="index.html">rahma course online</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
@@ -39,9 +58,9 @@
    
     <section class="page-section clearfix">
         <div class="container">
-            <div class="intro d-flex flex-column flex-lg-row justify-content-between align-items-start">
-                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/2.png" alt="Intro Image" />
-                <div class="intro-text text-center bg-faded p-4 p-lg-5 rounded">
+            <div class="intro">
+                <img class="intro-img rounded" src="assets/img/2.png" alt="Intro Image" />
+                <div class="intro-text text-center bg-faded p-5 rounded">
                     <h2 class="section-heading mb-4">
                         <span class="section-heading-upper">MARI BELAJAR BERSAMA </span>
                         <span class="section-heading-lower">RAHMA ONLINE COURSE</span>
