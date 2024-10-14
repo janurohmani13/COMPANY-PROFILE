@@ -1,6 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        /* Gaya umum untuk memastikan konsistensi */
+        body {
+            font-family: 'Raleway', sans-serif; /* Gaya font umum */
+            background-color: #f8f9fa; /* Warna latar belakang */
+        }
+        
+        .container {
+            max-width: 1200px; /* Batasi lebar maksimum untuk layar besar */
+            margin: 0 auto; /* Pusatkan kontainer */
+            padding: 15px; /* Tambahkan padding di semua sisi */
+        }
+        
+        .intro {
+            display: flex; /* Gunakan flexbox untuk tata letak di desktop */
+            flex-direction: column; /* Menumpuk elemen secara vertikal pada mobile */
+            align-items: center; /* Pusatkan elemen */
+            margin-bottom: 20px; /* Spasi di bawah untuk mobile */
+        }
+    
+        .intro-img {
+            width: 100%; /* Membuat gambar responsif */
+            height: auto; /* Mempertahankan rasio aspek */
+            max-width: 600px; /* Batasi lebar maksimum gambar */
+        }
+    
+        .intro-text {
+            text-align: center; /* Pusatkan teks */
+            background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih transparan */
+            padding: 20px; /* Tambahkan padding di dalam intro-text */
+            border-radius: 10px; /* Sudut membulat */
+            margin-top: 20px; /* Tambahkan jarak antara gambar dan teks */
+        }
+    
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column; /* Tetap menumpuk elemen secara vertikal di mobile */
+            }
+    
+            .cta-inner {
+                padding: 20px; /* Tambahkan padding untuk konten CTA */
+            }
+        }
+    </style>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
